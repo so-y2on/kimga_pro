@@ -23,7 +23,7 @@ public class Join_pat extends AppCompatActivity {
 
 
     Button btn_join_pat;
-    EditText et_pat_id, et_pat_pw, et_pat_name, et_birth, et_pat_tel, et_key_num, et_pro_num;
+    EditText et_pat_id, et_pat_pw, et_pat_name, et_pat_nick, et_pro_num;
 
 
     @Override
@@ -37,9 +37,7 @@ public class Join_pat extends AppCompatActivity {
         et_pat_id = findViewById(R.id.et_pat_id);
         et_pat_pw = findViewById(R.id.et_pat_pw);
         et_pat_name = findViewById(R.id.et_pat_name);
-        et_birth = findViewById(R.id.et_birth);
-        et_pat_tel = findViewById(R.id.et_pat_tel);
-        et_key_num = findViewById(R.id.et_key_num);
+        et_pat_nick = findViewById(R.id.et_pat_nick);
         et_pro_num = findViewById(R.id.et_pro_num);
         btn_join_pat = findViewById(R.id.btn_join_pat);
 
@@ -53,9 +51,7 @@ public class Join_pat extends AppCompatActivity {
             String pat_id = et_pat_id.getText().toString();
             String pat_pw = et_pat_pw.getText().toString();
             String pat_name = et_pat_name.getText().toString();
-            String birth = et_birth.getText().toString();
-            String pat_tel = et_pat_tel.getText().toString();
-            String key_num = et_key_num.getText().toString();
+            String nick = et_pat_nick.getText().toString();
             String pro_num = et_pro_num.getText().toString();
 
 
@@ -64,13 +60,10 @@ public class Join_pat extends AppCompatActivity {
             Join.put("id",et_pat_id.getText().toString());
             Join.put("pw", et_pat_pw.getText().toString());
             Join.put("name", et_pat_name.getText().toString());
-            Join.put("birth", et_birth.getText().toString());
-            Join.put("pat_tel", et_pat_tel.getText().toString());
-            Join.put("key_num", et_key_num.getText().toString());
+            Join.put("nick", et_pat_nick.getText().toString());
             Join.put("pro_num", et_pro_num.getText().toString());
 
-            // Add a new document with a generated ID
-            db.collection("KIMGA")
+            db.collection("Member")
                     .add(Join)
                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override
@@ -87,7 +80,7 @@ public class Join_pat extends AppCompatActivity {
 
 
 
-            Intent intent = new Intent(Join_pat.this, Login_pat.class);
+            Intent intent = new Intent(getApplicationContext(), Login_pat.class);
             startActivity(intent);
 
 

@@ -6,176 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginTop="104dp"
-        android:text="다음"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginTop="104dp"
-        android:text="이전"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:text="좋음"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="오늘의 기분"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="한줄 일기를 입력하세요"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/seekBar5"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/seekBar5"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar5" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="28dp"
-        android:text="수면"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
-
-    <SeekBar
-        android:id="@+id/seekBar3"
-        style="@android:style/Widget.Material.SeekBar"
-        android:layout_width="0dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:indeterminate="false"
-        android:scrollbarStyle="outsideOverlay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="32dp"
-        android:text="식사"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar3" />
-
-    <SeekBar
-        android:id="@+id/seekBar5"
-        style="@android:style/Widget.Material.SeekBar"
-        android:layout_width="0dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:indeterminate="false"
-        android:scrollbarStyle="outsideOverlay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView46" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="저장하기"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
-
-    <ImageButton
-        android:id="@+id/btn_calendar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="408dp"
-        android:layout_height="68dp"
+        android:id="@+id/bnv"
+        android:layout_width="416dp"
+        android:layout_height="85dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/home_menu" />
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="206dp"
-        android:layout_height="213dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="24dp"
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnv"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/happy" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="0분            10분            20분             30분"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView46"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="굶음         소식        보통          과식       폭식"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

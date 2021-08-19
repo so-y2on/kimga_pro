@@ -2,15 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/tab1"
         android:icon="@drawable/home"
         android:title="HOME" />
     <item
+        android:id="@+id/tab2"
         android:icon="@drawable/clipboard"
         android:title="BOARD" />
     <item
+        android:id="@+id/tab3"
         android:icon="@drawable/musical"
         android:title="MUSIC" />
     <item
+        android:id="@+id/tab4"
         android:icon="@drawable/profile"
         android:title="MY PAGE" />
 </menu>

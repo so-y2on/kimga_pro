@@ -18,35 +18,35 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_time_alarm"
+        android:id="@+id/et_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="ID"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/et_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="PW"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/et_time_alarm"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/et_time_alarm"
-        app:layout_constraintTop_toBottomOf="@+id/et_time_alarm" />
+        app:layout_constraintStart_toStartOf="@+id/et_id"
+        app:layout_constraintTop_toBottomOf="@+id/et_id" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="460dp"
         android:text="ID/PW 찾기"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/btn_login_pat"
@@ -56,13 +56,13 @@
         android:id="@+id/btn_login_pat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="로그인"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintEnd_toEndOf="@+id/et_pw"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_pw"
+        app:layout_constraintTop_toBottomOf="@+id/et_pw" />
 
     <TextView
         android:id="@+id/tv_join_pat"

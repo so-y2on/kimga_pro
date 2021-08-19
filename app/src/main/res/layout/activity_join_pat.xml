@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:ems="10"
-        android:hint="ID"
+        android:hint="아이디"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintHorizontal_bias="0.47"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="PW"
+        android:hint="비밀번호"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/et_pat_id"
         app:layout_constraintStart_toStartOf="@+id/et_pat_id"
@@ -54,37 +54,16 @@
         app:layout_constraintTop_toBottomOf="@+id/et_pat_pw" />
 
     <EditText
-        android:id="@+id/et_birth"
+        android:id="@+id/et_pat_nick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="생년월일"
-        android:inputType="date"
+        android:hint="닉네임"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_pat_name"
         app:layout_constraintStart_toStartOf="@+id/et_pat_name"
         app:layout_constraintTop_toBottomOf="@+id/et_pat_name" />
-
-    <EditText
-        android:id="@+id/et_pat_tel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="전화번호"
-        android:inputType="phone"
-        app:layout_constraintStart_toStartOf="@+id/et_birth"
-        app:layout_constraintTop_toBottomOf="@+id/et_birth" />
-
-    <EditText
-        android:id="@+id/et_key_num"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="담당의 Key"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/et_pat_tel"
-        app:layout_constraintTop_toBottomOf="@+id/et_pat_tel" />
 
     <EditText
         android:id="@+id/et_pro_num"
@@ -94,8 +73,8 @@
         android:ems="10"
         android:hint="제품번호"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/et_key_num"
-        app:layout_constraintTop_toBottomOf="@+id/et_key_num" />
+        app:layout_constraintStart_toStartOf="@+id/et_pat_nick"
+        app:layout_constraintTop_toBottomOf="@+id/et_pat_nick" />
 
     <Button
         android:id="@+id/btn_join_pat"
