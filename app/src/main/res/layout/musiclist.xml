@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/img_music"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="16dp"
@@ -24,8 +24,8 @@
         android:text="노래 제목"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/img"
-        app:layout_constraintTop_toTopOf="@+id/img" />
+        app:layout_constraintStart_toEndOf="@+id/img_music"
+        app:layout_constraintTop_toTopOf="@+id/img_music" />
 
     <TextView
         android:id="@+id/tv_singer"

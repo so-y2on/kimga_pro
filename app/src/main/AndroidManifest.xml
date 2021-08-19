@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FireBaseTest">
 
-        <activity android:name=".Music" />
         <activity android:name=".Graph" />
-        <activity android:name=".Alarm"></activity>
+        <activity android:name=".Alarm">
+
+
+        </activity>
         <activity android:name=".AddAlarm"></activity>
         <activity android:name=".Calendar" />
         <activity android:name=".Home">

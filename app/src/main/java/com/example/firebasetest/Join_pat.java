@@ -34,7 +34,7 @@ public class Join_pat extends AppCompatActivity {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         //아이디 초기화
-        et_pat_id = findViewById(R.id.et_pat_id);
+        et_pat_id = findViewById(R.id.et_name_alarm);
         et_pat_pw = findViewById(R.id.et_pat_pw);
         et_pat_name = findViewById(R.id.et_pat_name);
         et_pat_nick = findViewById(R.id.et_pat_nick);
@@ -63,7 +63,7 @@ public class Join_pat extends AppCompatActivity {
             Join.put("nick", et_pat_nick.getText().toString());
             Join.put("pro_num", et_pro_num.getText().toString());
 
-            db.collection("Member")
+            db.collection("KIMGA")
                     .add(Join)
                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override

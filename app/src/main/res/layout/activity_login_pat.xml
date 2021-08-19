@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_id"
+        android:id="@+id/et_login_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/et_pw"
+        android:id="@+id/et_login_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -39,14 +39,14 @@
         android:hint="PW"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/et_time_alarm"
-        app:layout_constraintStart_toStartOf="@+id/et_id"
-        app:layout_constraintTop_toBottomOf="@+id/et_id" />
+        app:layout_constraintStart_toStartOf="@+id/et_login_id"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_id" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="16dp"
         android:text="ID/PW 찾기"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/btn_login_pat"
@@ -59,17 +59,18 @@
         android:layout_marginTop="40dp"
         android:text="로그인"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/et_pw"
+        app:layout_constraintEnd_toEndOf="@+id/et_login_pw"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/et_pw"
-        app:layout_constraintTop_toBottomOf="@+id/et_pw" />
+        app:layout_constraintStart_toStartOf="@+id/et_login_pw"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_pw" />
 
     <TextView
         android:id="@+id/tv_join_pat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="회원가입"
-        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/btn_login_pat"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_pat" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
