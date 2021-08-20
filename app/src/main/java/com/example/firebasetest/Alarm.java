@@ -34,6 +34,7 @@ public class Alarm extends AppCompatActivity {
 
     List<AlarmVO> data;
     final int ADDALARM = 1000;
+    //소연테스트
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
