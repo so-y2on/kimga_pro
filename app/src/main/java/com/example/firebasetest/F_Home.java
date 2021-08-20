@@ -26,11 +26,11 @@ public class F_Home extends Fragment {
         //아이디 초기화
         ImageButton btn_calendar= view.findViewById(R.id.btn_calendar);
 
-
-        //캘린더버튼 눌렀을때
+        //캘린더버튼 눌렀을때 캘린더로 이동
         btn_calendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(getActivity(), Calendar.class);
                 startActivity(intent);
             }

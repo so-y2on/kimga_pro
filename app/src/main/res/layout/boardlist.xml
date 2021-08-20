@@ -6,59 +6,37 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
-        android:id="@+id/img_music"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/img_board_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/sad" />
 
     <TextView
-        android:id="@+id/tv_song"
+        android:id="@+id/tv_writer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/img_music"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/img_board_user"
+        app:layout_constraintTop_toTopOf="@+id/img_board_user" />
 
     <TextView
-        android:id="@+id/tv_other_msg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:id="@+id/tv_answer"
+        android:layout_width="258dp"
+        android:layout_height="59dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/img_music"
-        app:layout_constraintTop_toBottomOf="@+id/tv_song" />
+        app:layout_constraintBottom_toBottomOf="@+id/img_board_user"
+        app:layout_constraintStart_toStartOf="@+id/tv_writer" />
 
     <TextView
-        android:id="@+id/tv_other_time"
+        android:id="@+id/tv_board_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_other_msg"
-        app:layout_constraintStart_toEndOf="@+id/tv_other_msg"
-        app:layout_constraintTop_toTopOf="@+id/tv_other_msg" />
-
-    <TextView
-        android:id="@+id/tv_user_msg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FBE200"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_other_time" />
-
-    <TextView
-        android:id="@+id/tv_user_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/tv_user_msg"
-        app:layout_constraintTop_toTopOf="@+id/tv_user_msg" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_answer"
+        app:layout_constraintTop_toTopOf="@+id/tv_writer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
