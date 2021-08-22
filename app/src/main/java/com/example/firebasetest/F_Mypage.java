@@ -1,12 +1,25 @@
 package com.example.firebasetest;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +68,67 @@ public class F_Mypage extends Fragment {
         }
     }
 
+    TextView tv_my_name, tv_my_nick, tv_my_num;
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_f__mypage, container, false);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_f__mypage, container, false);
+
+        tv_my_name= view.findViewById(R.id.tv_my_name);
+        tv_my_nick=view.findViewById(R.id.tv_my_nick);
+        tv_my_num=view.findViewById(R.id.tv_my_num);
+
+        SharedPreferences spf = getActivity().getSharedPreferences("LoginID", Context.MODE_PRIVATE);
+        String loginId = spf.getString("loginId", "s");
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        //CollectionReference citiesRef = db.collection("KIMGA");
+
+        db.collection("KIMGA")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                if (loginId.equals(document.getData().get("id").toString())) {
+
+                                    String name = document.getData().get("name").toString();
+                                    Log.d("테스트1", document.getData().get("name").toString());
+                                    String nick = document.getData().get("nick").toString();
+                                    Log.d("테스트2", document.getData().get("nick").toString());
+                                    String num = document.getData().get("pro_num").toString();
+                                    Log.d("테스트3", document.getData().get("pro_num").toString());
+
+                                    tv_my_name.setText(name);
+                                    tv_my_nick.setText(nick);
+                                    tv_my_num.setText(num);
+                                }
+                               /* if(id.equals(login_id)&&pw.equals(login_pw)){
+                                    Toast.makeText(F_Mypage.this, "로그인성공", Toast.LENGTH_SHORT).show();
+
+                                    break;
+                                }*/
+
+                                Log.d("TAG", document.getId() + " => " + document.getData());
+                            }
+                        } else {
+                            Log.d("TAG", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+
+
+
+
+
+
+        return view;
     }
 }

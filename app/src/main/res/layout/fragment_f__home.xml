@@ -24,6 +24,7 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -35,9 +36,9 @@
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView12"
-                    app:layout_constraintStart_toStartOf="@+id/imageView12"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+                    app:layout_constraintEnd_toEndOf="@+id/img1"
+                    app:layout_constraintStart_toStartOf="@+id/img1"
+                    app:layout_constraintTop_toBottomOf="@+id/img1" />
 
                 <TextView
                     android:id="@+id/textView50"
@@ -47,9 +48,9 @@
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
-                    app:layout_constraintStart_toStartOf="@+id/imageView3"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+                    app:layout_constraintEnd_toEndOf="@+id/img6"
+                    app:layout_constraintStart_toStartOf="@+id/img6"
+                    app:layout_constraintTop_toBottomOf="@+id/img6" />
 
                 <TextView
                     android:id="@+id/textView51"
@@ -59,9 +60,9 @@
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView13"
-                    app:layout_constraintStart_toStartOf="@+id/imageView13"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+                    app:layout_constraintEnd_toEndOf="@+id/img5"
+                    app:layout_constraintStart_toStartOf="@+id/img5"
+                    app:layout_constraintTop_toBottomOf="@+id/img5" />
 
                 <TextView
                     android:id="@+id/textView52"
@@ -71,9 +72,9 @@
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView14"
-                    app:layout_constraintStart_toStartOf="@+id/imageView14"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+                    app:layout_constraintEnd_toEndOf="@+id/img4"
+                    app:layout_constraintStart_toStartOf="@+id/img4"
+                    app:layout_constraintTop_toBottomOf="@+id/img4" />
 
                 <TextView
                     android:id="@+id/textView53"
@@ -83,9 +84,9 @@
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView15"
-                    app:layout_constraintStart_toStartOf="@+id/imageView15"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+                    app:layout_constraintEnd_toEndOf="@+id/img3"
+                    app:layout_constraintStart_toStartOf="@+id/img3"
+                    app:layout_constraintTop_toBottomOf="@+id/img3" />
 
                 <TextView
                     android:id="@+id/textView54"
@@ -95,10 +96,10 @@
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView16"
+                    app:layout_constraintEnd_toEndOf="@+id/img2"
                     app:layout_constraintHorizontal_bias="0.483"
-                    app:layout_constraintStart_toStartOf="@+id/imageView16"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+                    app:layout_constraintStart_toStartOf="@+id/img2"
+                    app:layout_constraintTop_toBottomOf="@+id/img2" />
 
                 <TextView
                     android:id="@+id/tv_name"
@@ -117,8 +118,8 @@
                     android:id="@+id/tv_name2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
-                    android:text="낮잠은 충분히 주무셨나요?"
+                    android:layout_marginTop="400dp"
+                    android:text="잠은 충분히 주무셨나요?"
                     android:textColor="#000000"
                     android:textSize="28sp"
                     android:textStyle="bold"
@@ -129,25 +130,37 @@
                     android:id="@+id/tv_name3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="300dp"
                     android:text="식사는 맛있게 드셨나요?"
                     android:textColor="#000000"
                     android:textSize="28sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/tv_name2"
-                    app:layout_constraintTop_toBottomOf="@+id/button4" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name2" />
 
                 <TextView
                     android:id="@+id/tv_name4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="80dp"
                     android:text="오늘 하루를, 한줄로!"
                     android:textColor="#000000"
                     android:textSize="28sp"
                     android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/radioGroup_ex"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup_ex" />
+
+                <TextView
+                    android:id="@+id/tv_name6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="300dp"
+                    android:text="운동은 얼마나 하셨나요?"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/tv_name3"
-                    app:layout_constraintTop_toBottomOf="@+id/button14" />
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name3" />
 
                 <ImageButton
                     android:id="@+id/btn_calendar"
@@ -160,228 +173,81 @@
                     app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
                 <ImageView
-                    android:id="@+id/imageView12"
+                    android:id="@+id/img1"
                     android:layout_width="80dp"
                     android:layout_height="77dp"
                     android:layout_marginTop="20dp"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView16"
+                    app:layout_constraintEnd_toStartOf="@+id/img2"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_name"
                     app:srcCompat="@drawable/happy" />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/img6"
                     android:layout_width="80dp"
                     android:layout_height="77dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/imageView13"
-                    app:layout_constraintTop_toTopOf="@+id/imageView13"
+                    app:layout_constraintStart_toEndOf="@+id/img5"
+                    app:layout_constraintTop_toTopOf="@+id/img5"
                     app:srcCompat="@drawable/happy" />
 
                 <ImageView
-                    android:id="@+id/imageView13"
+                    android:id="@+id/img5"
                     android:layout_width="80dp"
                     android:layout_height="77dp"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                    app:layout_constraintEnd_toStartOf="@+id/img6"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/imageView14"
-                    app:layout_constraintTop_toTopOf="@+id/imageView14"
+                    app:layout_constraintStart_toEndOf="@+id/img4"
+                    app:layout_constraintTop_toTopOf="@+id/img4"
                     app:srcCompat="@drawable/happy" />
 
                 <ImageView
-                    android:id="@+id/imageView14"
+                    android:id="@+id/img4"
                     android:layout_width="80dp"
                     android:layout_height="77dp"
                     android:layout_marginTop="30dp"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView13"
+                    app:layout_constraintEnd_toStartOf="@+id/img5"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView6"
                     app:srcCompat="@drawable/happy" />
 
                 <ImageView
-                    android:id="@+id/imageView15"
+                    android:id="@+id/img3"
                     android:layout_width="80dp"
                     android:layout_height="77dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/imageView16"
-                    app:layout_constraintTop_toTopOf="@+id/imageView16"
+                    app:layout_constraintStart_toEndOf="@+id/img2"
+                    app:layout_constraintTop_toTopOf="@+id/img2"
                     app:srcCompat="@drawable/happy" />
 
                 <ImageView
-                    android:id="@+id/imageView16"
+                    android:id="@+id/img2"
                     android:layout_width="80dp"
                     android:layout_height="77dp"
-                    app:layout_constraintEnd_toStartOf="@+id/imageView15"
+                    app:layout_constraintEnd_toStartOf="@+id/img3"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/imageView12"
-                    app:layout_constraintTop_toTopOf="@+id/imageView12"
+                    app:layout_constraintStart_toEndOf="@+id/img1"
+                    app:layout_constraintTop_toTopOf="@+id/img1"
                     app:srcCompat="@drawable/happy" />
 
+
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/btn_Main_Save"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="70dp"
+                    android:layout_marginBottom="40dp"
                     android:text="저장하기"
                     android:textColor="#000000"
                     android:textSize="32sp"
-                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-                    app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="안잤어요"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/button8"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_name2" />
-
-                <Button
-                    android:id="@+id/button12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="안잤어요"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/button17"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/button16"
-                    app:layout_constraintTop_toTopOf="@+id/button16" />
-
-                <Button
-                    android:id="@+id/button13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:text="안잤어요"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/button14"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button16" />
-
-                <Button
-                    android:id="@+id/button14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="안잤어요"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/button15"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/button13"
-                    app:layout_constraintTop_toTopOf="@+id/button13" />
-
-                <Button
-                    android:id="@+id/button15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="안잤어요"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/button14"
-                    app:layout_constraintTop_toTopOf="@+id/button14" />
-
-                <Button
-                    android:id="@+id/button16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="안잤어요"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/button12"
-                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_name3" />
-
-                <Button
-                    android:id="@+id/button17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="안잤어요"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/button12"
-                    app:layout_constraintTop_toTopOf="@+id/button12" />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="~1시간"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/button9"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/button10"
-                    app:layout_constraintTop_toTopOf="@+id/button10" />
-
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="~20분"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/button8"
-                    app:layout_constraintTop_toTopOf="@+id/button8" />
-
-                <Button
-                    android:id="@+id/button8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="~10분"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/button6"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/button3"
-                    app:layout_constraintTop_toTopOf="@+id/button3" />
-
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="충분!"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/button4"
-                    app:layout_constraintTop_toTopOf="@+id/button4" />
-
-                <Button
-                    android:id="@+id/button10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:text="~30분"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/button4"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button3" />
+                    app:layout_constraintTop_toBottomOf="@+id/et_haru" />
 
                 <TextView
                     android:id="@+id/textView55"
@@ -395,21 +261,193 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/et_haru"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:ems="10"
                     android:hint="내용을 입력해주세요"
                     android:inputType="textPersonName"
-                    app:layout_constraintEnd_toEndOf="@+id/button15"
-                    app:layout_constraintStart_toStartOf="@+id/button13"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_name3"
+                    app:layout_constraintStart_toStartOf="@+id/tv_name3"
                     app:layout_constraintTop_toBottomOf="@+id/tv_name4" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_ex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_name6"
+                    app:layout_constraintStart_toStartOf="@+id/tv_name6"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name6">
+
+                    <RadioButton
+                        android:id="@+id/rb_No"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="안했어요" />
+
+                    <RadioButton
+                        android:id="@+id/rb_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10분!" />
+
+                    <RadioButton
+                        android:id="@+id/rb_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="20분!" />
+
+                    <RadioButton
+                        android:id="@+id/rb_30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30분!" />
+
+                    <RadioButton
+                        android:id="@+id/rb_1h"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1시간!" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2h"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2시간이상!" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_name2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name2">
+
+                    <RadioButton
+                        android:id="@+id/rb_NS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="안잤어요" />
+
+                    <RadioButton
+                        android:id="@+id/rb_S4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4시간 이하" />
+
+                    <RadioButton
+                        android:id="@+id/rb_S56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5~6시간" />
+
+                    <RadioButton
+                        android:id="@+id/rb_S79"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7~9시간" />
+
+                    <RadioButton
+                        android:id="@+id/rb_TheS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="더 잤어요" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_name3"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name3">
+
+                    <RadioButton
+                        android:id="@+id/rb_NE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="안먹었어요" />
+
+                    <RadioButton
+                        android:id="@+id/rb_ELittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="소식했어요" />
+
+                    <RadioButton
+                        android:id="@+id/rb_EJal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="잘먹었어요" />
+
+                    <RadioButton
+                        android:id="@+id/rb_EGwa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="과식했어요" />
+
+                    <RadioButton
+                        android:id="@+id/rb_EPok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="폭식했어요" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_f"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/img6"
+                    app:layout_constraintStart_toStartOf="@+id/img4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51">
+
+                    <RadioButton
+                        android:id="@+id/rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="기쁨" />
+
+                    <RadioButton
+                        android:id="@+id/rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="슬픔" />
+
+                    <RadioButton
+                        android:id="@+id/rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="우울" />
+
+                    <RadioButton
+                        android:id="@+id/rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="깜짝" />
+
+                    <RadioButton
+                        android:id="@+id/rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="행복" />
+
+                    <RadioButton
+                        android:id="@+id/rb6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="아픔" />
+                </RadioGroup>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
 
+
+</androidx.constraintlayout.widget.ConstraintLayout>
